@@ -26,7 +26,7 @@ Taskify is a powerful and user-friendly task management and collaboration tool b
 
 ## Prerequisites  
 - **Node.js** >= 18  
-- **Bun** >= 1.0 ([Install Bun](https://bun.sh))  
+- **Bun** >= 2.4 ([Install Bun](https://bun.sh))  
 - **Appwrite** installed and configured (self-hosted or cloud).  
 - **Appwrite Project** with API keys and required services set up.  
 
