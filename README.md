@@ -35,4 +35,9 @@ Taskify is a powerful and user-friendly task management and collaboration tool b
 ### 1. Clone the Repository  
 ```bash
 git clone https://github.com/yourusername/taskify.git  
-cd taskify  
+cd taskify
+```
+### 2.Install Dependencies Using Bun
+```bash
+curl -fsSL https://bun.sh/install | bash
+bun install
