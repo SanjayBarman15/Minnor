@@ -41,3 +41,18 @@ cd taskify
 ```bash
 curl -fsSL https://bun.sh/install | bash
 bun install
+```
+### 3.Set Up Environment Variables
+```bash
+NEXT_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_APPWRITE_ENDPOINT=http://localhost/v1
+APPWRITE_API_KEY=your_api_key
+```
+### 4.Run the Development Server
+```bash
+bun run dev
+```
+### 5.Access the Application
+```bash
+http://localhost:3000
+```
