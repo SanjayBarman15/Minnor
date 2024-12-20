@@ -176,7 +176,11 @@ export const CreateProjectForm = ({ onCancel }: CreateProjectFormProps) => {
             </div>
             <DottedSeparator className="py-7" />
             <div className="flex items-center justify-between">
+<<<<<<< HEAD
               <Button
+=======
+              {/* <Button
+>>>>>>> a4d7b51 (Initial Tasks commit)
                 type="button"
                 size="lg"
                 variant="secondary"
@@ -185,6 +189,18 @@ export const CreateProjectForm = ({ onCancel }: CreateProjectFormProps) => {
                 className={cn(!oncancel && "invisible")}
               >
                 Cancel
+<<<<<<< HEAD
+=======
+              </Button> */}
+              <Button
+                type="button"
+                size="lg"
+                variant="secondary"
+                onClick={onCancel}
+                disabled={isPending}
+              >
+                Cancel
+>>>>>>> a4d7b51 (Initial Tasks commit)
               </Button>
               <Button type="submit" size="lg" disabled={isPending}>
                 Create Project

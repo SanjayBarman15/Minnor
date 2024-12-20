@@ -80,6 +80,7 @@ export const EditProjectForm = ({
       ...values,
       image: values.image instanceof File ? values.image : "",
     };
+<<<<<<< HEAD
     mutate(
       {
         form: finalValues,
@@ -94,6 +95,14 @@ export const EditProjectForm = ({
         },
       }
     );
+=======
+    mutate({
+      form: finalValues,
+      param: {
+        projectId: initialValues.$id,
+      },
+    });
+>>>>>>> a4d7b51 (Initial Tasks commit)
 
     console.log(values);
   };

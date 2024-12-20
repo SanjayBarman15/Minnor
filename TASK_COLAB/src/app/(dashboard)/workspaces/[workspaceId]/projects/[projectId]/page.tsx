@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {PencilIcon} from "lucide-react";
 import { redirect } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -48,6 +49,17 @@ const ProjectIdPage = async ({ params }: ProjectIdPageProps) => {
       <TaskViewSwitcher />
     </div>
   );
+=======
+import { redirect } from "next/navigation";
+import { getCurrent } from "@/features/auth/queries";
+import { ProjectIdClient } from "./client";
+
+const ProjectIdPage = async () => {
+  const user = await getCurrent();
+  if (!user) redirect("/sign-in");
+
+  return <ProjectIdClient/>
+>>>>>>> a4d7b51 (Initial Tasks commit)
 };
 
 export default ProjectIdPage;

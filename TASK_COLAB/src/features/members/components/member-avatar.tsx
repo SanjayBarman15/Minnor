@@ -27,7 +27,11 @@ export const MemberAvatar= ({
       <AvatarFallback className={cn(
         "bg-neutral-200 font-medium text-neutral-500 flex items-center justify-center",fallbackClassName
       )}>
+<<<<<<< HEAD
         {name.charAt(0).toUpperCase()}
+=======
+        {(name?.charAt(0) || "?").toUpperCase()}
+>>>>>>> a4d7b51 (Initial Tasks commit)
       </AvatarFallback>
     </Avatar>
   );

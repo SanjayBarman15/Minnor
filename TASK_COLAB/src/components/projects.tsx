@@ -6,12 +6,20 @@ import { usePathname } from "next/navigation";
 import { RiAddCircleFill } from "react-icons/ri";
 import { useGetProjects } from "@/features/projects/api/use-get-projects";
 import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-Id";
+<<<<<<< HEAD
 import { useCreteProjectModal } from "@/features/projects/hooks/use-create-project-modal";
+=======
+import { useCreateProjectModal } from "@/features/projects/hooks/use-create-project-modal";
+>>>>>>> a4d7b51 (Initial Tasks commit)
 import { ProjectAvatar } from "@/features/projects/components/project-avatar";
 export const Projects = () => {
   // const projectId = null; // to do
   const pathname = usePathname();
+<<<<<<< HEAD
   const { open } = useCreteProjectModal();
+=======
+  const { open } = useCreateProjectModal();
+>>>>>>> a4d7b51 (Initial Tasks commit)
   const workspaceId = useWorkspaceId();
   const { data } = useGetProjects({ workspaceId });
 

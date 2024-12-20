@@ -40,9 +40,17 @@ export const EditWorkspaceForm = ({
 }: EditWorkspaceFormProps) => {
   const router = useRouter();
   const { mutate, isPending } = useUpdateWorkspace();
+<<<<<<< HEAD
   const { mutate: deleteWorkspace, isPending: isDeletingWorkspace } = useDeleteWorkspace();
   const { mutate: resetInviteCode, isPending: isResettingInviteCode } = useResetInviteCode();
  
+=======
+  const { mutate: deleteWorkspace, isPending: isDeletingWorkspace } =
+    useDeleteWorkspace();
+  const { mutate: resetInviteCode, isPending: isResettingInviteCode } =
+    useResetInviteCode();
+
+>>>>>>> a4d7b51 (Initial Tasks commit)
   const [DeleteDialog, confirmDelete] = useConfirm(
     "Delete Workspace",
     "This action cannot be undone.",
@@ -53,7 +61,10 @@ export const EditWorkspaceForm = ({
     "This will invalidate the current invite link.",
     "destructive"
   );
+<<<<<<< HEAD
   
+=======
+>>>>>>> a4d7b51 (Initial Tasks commit)
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -89,11 +100,17 @@ export const EditWorkspaceForm = ({
 
     if (!ok) return;
 
+<<<<<<< HEAD
     resetInviteCode(
       {
         param: { workspaceId: initialValues.$id },
       },
     );
+=======
+    resetInviteCode({
+      param: { workspaceId: initialValues.$id },
+    });
+>>>>>>> a4d7b51 (Initial Tasks commit)
 
     console.log("deleting...");
   };
@@ -103,6 +120,7 @@ export const EditWorkspaceForm = ({
       ...values,
       image: values.image instanceof File ? values.image : "",
     };
+<<<<<<< HEAD
     mutate(
       {
         form: finalValues,
@@ -117,6 +135,14 @@ export const EditWorkspaceForm = ({
         },
       }
     );
+=======
+    mutate({
+      form: finalValues,
+      param: {
+        workspaceId: initialValues.$id,
+      },
+    });
+>>>>>>> a4d7b51 (Initial Tasks commit)
 
     console.log(values);
   };

@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@hello-pangea/dnd": "17.0.0",
+>>>>>>> a4d7b51 (Initial Tasks commit)
     "@hono/zod-validator": "^0.4.1",
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-avatar": "^1.1.1",
@@ -24,9 +28,16 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tabs": "^1.1.1",
     "@tanstack/react-query": "5.59.0",
+<<<<<<< HEAD
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
+=======
+    "@tanstack/react-table": "8.20.5",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "date-fns": "4.1.0",
+>>>>>>> a4d7b51 (Initial Tasks commit)
     "hono": "4.6.3",
     "lucide-react": "^0.451.0",
     "next": "14.2.14",
@@ -34,6 +45,10 @@
     "node-appwrite": "14.1.0",
     "nuqs": "1.19.1",
     "react": "^18",
+<<<<<<< HEAD
+=======
+    "react-big-calendar": "1.14.1",
+>>>>>>> a4d7b51 (Initial Tasks commit)
     "react-day-picker": "8.10.1",
     "react-dom": "^18",
     "react-hook-form": "^7.53.0",
@@ -48,6 +63,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
@@ -56,5 +72,16 @@
     "tailwindcss": "^3.4.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.14"
+=======
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-big-calendar": "1.8.11",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+>>>>>>> a4d7b51 (Initial Tasks commit)
   }
 }

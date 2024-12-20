@@ -4,7 +4,11 @@ import { useRouter } from "next/navigation";
 import { RiAddCircleFill } from "react-icons/ri";
 import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-Id";
 import { useGetWorkspaces } from "@/features/workspaces/api/use-get-workspaces";
+<<<<<<< HEAD
 import { useCreteWorkspaceModal } from "@/features/workspaces/hooks/use-create-workspace-modal";
+=======
+import { useCreateWorkspaceModal } from "@/features/workspaces/hooks/use-create-workspace-modal";
+>>>>>>> a4d7b51 (Initial Tasks commit)
 import {
   Select,
   SelectContent,
@@ -18,7 +22,11 @@ export const WorkspaceSwitcher = () => {
   const workspaceId = useWorkspaceId();
   const router = useRouter();
   const { data: workspaces } = useGetWorkspaces();
+<<<<<<< HEAD
   const {open} = useCreteWorkspaceModal();
+=======
+  const {open} = useCreateWorkspaceModal();
+>>>>>>> a4d7b51 (Initial Tasks commit)
 
   const onSelect = (id: string) => {
     router.push(`/workspaces/${id}`);

@@ -4,7 +4,11 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 interface ProjectAvatarProps {
   image?: string;
+<<<<<<< HEAD
   name: string;
+=======
+  name?: string;
+>>>>>>> a4d7b51 (Initial Tasks commit)
   className?: string;
   fallbackClassName?: string;
 }
@@ -20,7 +24,11 @@ export const ProjectAvatar = ({
       <div
         className={cn("size-5 relative rounded-md overflow-hidden", className)}
       >
+<<<<<<< HEAD
         <Image src={image} alt={name} fill className="object-cover" />
+=======
+        <Image src={image} alt={name || "Project"} fill className="object-cover" />
+>>>>>>> a4d7b51 (Initial Tasks commit)
       </div>
     );
   }
@@ -32,7 +40,11 @@ export const ProjectAvatar = ({
           fallbackClassName
         )}
       >
+<<<<<<< HEAD
         {name[0]}
+=======
+        {name?.charAt(0).toUpperCase() || "?"}
+>>>>>>> a4d7b51 (Initial Tasks commit)
       </AvatarFallback>
     </Avatar>
   );
